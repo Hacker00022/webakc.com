@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Akc</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<style>
+
+
+.montserrat-uniquifier {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.faq-container {
+    background-color: #708090;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-question {
+    font-size: 18px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-left: 5px solid #ff7a00;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #f7f7f7;
+}
+
+.faq-answer {
+    display: none;
+    font-size: 16px;
+    padding: 15px;
+    background-color: #fafafa;
+    border-left: 5px solid #ff7a00;
+    border-top: 1px solid #e6e6e6;
+}
+
+
+.tech-stack {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #708090;
+    width: 100%;
+}
+
+.tech-stack h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.logos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-item {
+    flex: 1 1 100px;
+    max-width: 100px;
+    margin: 10px;
+}
+
+.logo-item img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .logos-container {
+        flex-wrap: wrap;
+    }
+    
+    .logo-item {
+        flex: 1 1 60px;
+        max-width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-stack h2 {
+        font-size: 1.5rem;
+    }
+    
+    .logo-item {
+        flex: 1 1 50px;
+        max-width: 60px;
+    }
+}
+
+
+
+.bann {
+    background-color: #708090; /* Orange background */
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner-contnt h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #Fca311;
+}
+
+.contat-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.contat-info div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.contat-info img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.button-continer button {
+    background-color: #Fca311; /* Bright yellow */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-continer button:hover {
+    background-color: #e5e500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .bann {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-contnt {
+        margin-bottom: 20px;
+    }
+
+    .banner-contnt h1 {
+        font-size: 28px;
+    }
+
+    .button-continer button {
+        padding: 10px 40px;
+        font-size: 18px;
+    }
+}
+
+
+footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        
+        footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        footer .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        footer .col-md-3 {
+            flex-basis: 23%;
+            padding: 10px;
+        }
+        
+        footer h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ffa500; /* Accent color */
+            padding-bottom: 5px;
+        }
+        
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        footer li {
+            margin-bottom: 10px;
+        }
+        
+        footer a {
+            color: #ffa500; /* Accent color */
+            text-decoration: none;
+            transition: color 0.3s; /* Smooth transition */
+        }
+        
+        footer a:hover {
+            color: #ccc;
+        }
+        
+        footer .footer-bottom {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        footer .copyright {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        footer .footer-links {
+            list-style: disc; /* Change to disc for bullets */
+            padding: 0;
+            margin-left: 300px;
+            display: flex; /* Center the links */
+            text-align: center; /* Align text to the left */
+        }
+        
+        footer .footer-links li {
+            margin: 0 15px;
+        }
+
+        footer .footer-links a:hover {
+            color: #ffa500; /* Accent color on hover */
+        }
+        
+        @media (max-width: 768px) {
+            footer .col-md-3 {
+                flex-basis: 48%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            footer .col-md-3 {
+                flex-basis: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51" >
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+      
+        <nav class="navbar navbar-expand-lg  sticky bg-body-tertiary" style="background-color: #14213D;" >
+            <div class="container-fluid">
+         </a>  <div style="margin-bottom: -20px; ">
+         <a href="./index.html"><img src="./logooo.png" alt="" style="margin-left: 30px; height: 110px; width: 200px; object-fit: cover;">
+   </a> </div>     
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav" style="margin-left: 180px; color: white; font-size: 15px;">
+                  <li class="nav-item mx-2">
+                    <a class="nav-link active" aria-current="page" href="aboutus.html" style="color: white;">ABOUT US</a>
+                  </li>
+                  <li class="nav-item  mx-2">
+                    <a class="nav-link" href="./pricing.html " style="color: white;">PRICING</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-2" href="./contact us.html" style="color: white;">CONTACT US</a>
+                  </li>
+                  <li class="nav-item" >
+                  <button type="button" class="btn btn-outline-primary b1 mx-2">     <i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+                    CALL US (800) 880-4109</button>
+                  </li>
+                  <li class="nav-item" >
+                    <button type="button" class="btn mx-2 b2" style="border: 2px solid rgb(62, 62, 180); border-radius: 4px black; background-color: #Fca311; color: black;"> REQUEST A CUSTOMQUOTE</button>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            
+          </nav>
+    
+     
+    <nav class="nav2" style="background-color: #Fca311;  " >
+        <div class="container-fluid">
+            <ul class="nav justify-content-center" style="color: black;">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <li class="nav-item">
+                  <a class="nav-link" href="./logobranding.html" style="color: black;">LOGO & BRANDING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./web.html" style="color: black;">WEBSITE DESIGN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./packages.html" style="color: black;">PRINTING & PACKAGING</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./seo.html" style="color: black;">SEO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./app.html" style="color: black;">MOBILE APPS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./video.html" style="color: black;">VIDEO ANIMATION</a>
+                  </li>
+              </ul>
+        </div>
+    </nav>
+   
+   
+
+<div style="background-color: #14213d;">
+    <div class="container" >
+        <!-- Hero Section -->
+        <section class="hero-section" style="margin-top: -50px;">
+            
+            <img src="./Untitled design.png" alt="" style="width: 1200px; margin-left: -20px; margin-top: 10px;">
+            <a href="" class="btn  py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft" style="background-color: #Fca311; color: white; margin-top: -260px; margin-left: 70px;">Let's Get Started</a>
+            <a href="" class="btn  py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight" style="background-color: #Fca311; color: white; margin-top: -260px;">Live Chat</a>
+        </section>
+  
+ 
+        <section class="brand-visibility-section" >
+            <div class="containe">
+                <h1>Increase Your Brand Visibility with Presence on Every Phone App Screen</h1>
+                <p>At <span class="highlight">Logo Zeal</span>, we develop a personalized platform for your business that curates maximum interactions between your targeted audience and business. We create mobile applications that reflect positively on your business identity in the market.</p>
+                <p>Through mobile applications, we create a path for users to follow and sustain an action to follow. We combine innovative layouts with exceptional coding and spare no bugs or loopholes in the mobile application. We create absolute game-changers for your business. With sheer experience in the market, our work is immensely recognized and trusted among the industries.</p>
+                <p>We create mobile apps that are coherent over all electronic devices and software.</p>
+            </div>
+        </section>
+    
+        <section class="value-section" style="background-color: #14213d;">
+            <div class="content-wrapper" style="background-color: #14213d;">
+              <div class="text-content" style="background-color: #14213d;">
+                <h1>Deliver Real Value</h1>
+                <p style="color: white;">Every element we add brings value to your business.</p>
+                <p class="desc">We deliver real-valued apps which are innately task-oriented and declutter the processes of purchasing or availing your business services. The apps were developed to function at full efficiency. With extensive knowledge of customer behavior, we know exactly what your target audience hopes for.</p>
+                <ul class="features" style="color: white;">
+                  <li>Flow of an intuitive app</li>
+                  <li>Relevant features</li>
+                  <li>All-purpose apps</li>
+                  <li>Simpler Interface</li>
+                  <li>Alternation in Layouts</li>
+                  <li>Convenience at best</li>
+                </ul>
+            </div>
+              <div class="image-content">
+                <img src="./linear-mobile-website.webp" alt="Mobile App">
+              </div>
+            </div>
+          </section>
+        
+          <section class="tech-stack" style="margin-top: 120px;">
+            <h2>Choosing the Right technology stack to build your app</h2>
+            <div class="logos-container">
+                <div class="logo-item"><img src="./29838131_7580918.jpg" alt="Xamarin"></div>
+                <div class="logo-item"><img src="./29838131_7580918.jpg" alt="JBoss"></div>
+                <div class="logo-item"><img src="./29838131_7580918.jpg" alt="Sencha"></div>
+                <div class="logo-item"><img src="./29838131_7580918.jpg" alt="Apache Cordova"></div>
+                <div class="logo-item"><img src="./29838131_7580918.jpg" alt="Unreal Engine"></div>
+                <div class="logo-item"><img src="./29838131_7580918.jpg" alt="Eclipse"></div>
+                <div class="logo-item"><img src="./29838131_7580918.jpg" alt="RedLaser"></div>
+                
+            </div>
+        </section>
+
+
+          <div class="cotaner" style="margin-top: 110px;">
+            <div class="case-study">
+                
+                <div class="text-section">
+                    <h2 style="color: #Fca311;">Client Case Studies</h2>
+                    <p style="color: white;">We don’t just offer mobile applications but we deliver great value that builds up an absolute value proposition for your target audience. Since every project is unique and requires a specific set of dynamic needs, we offer multiple packages that can surely fit your budget.</p>
+                    <a href="#" class="quote-btn" style="background-color: #Fca311;">Request a Custom Quote</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-container" style="margin-top: 90px;">
+            <h1>Brilliant Ideas That Create Great Value</h1>
+            <div class="portfolio-tags">
+                <span class="tag active" onclick="filterItems('ios')">IOS</span>
+                <span class="tag" onclick="filterItems('android')">Android</span>
+                <span class="tag" onclick="filterItems('games')">Games</span>
+                <span class="tag" onclick="filterItems('hybrid')">Hybrid Apps</span>
+            </div>
+        
+            <div class="portfolio-grid" style="align-items: center;">
+                <!-- iOS Projects -->
+                <div class="portfolio-item ios">
+                    <img src="./29838131_7580918.jpg" alt="iOS Project 1">
+                </div>
+               
+                <div class="portfolio-item ios" >
+                    <img src="./29838131_7580918.jpg" alt="iOS Project 2">
+                </div>
+                <div class="portfolio-item ios">
+                    <img src="./29838131_7580918.jpg" alt="iOS Project 2">
+                </div>
+              
+        
+                <!-- Android Projects -->
+                <div class="portfolio-item android">
+                    <img src="./Black and White Circle Business Logo.png" alt="Android Project 1">
+                </div>
+                <div class="portfolio-item android">
+                    <img src="./29838131_7580918.jpg" alt="Android Project 2">
+                </div>
+                <div class="portfolio-item android">
+                    <img src="./29838131_7580918.jpg" alt="Android Project 2">
+                </div>
+        
+                <!-- Games Projects -->
+                <div class="portfolio-item games">
+                    <img src="./Black Global Tech Internet Company Logo.png" alt="Games Project 1">
+                </div>
+                <div class="portfolio-item games">
+                    <img src="./29838131_7580918.jpg" alt="Games Project 2">
+                </div>
+                <div class="portfolio-item games">
+                    <img src="./29838131_7580918.jpg" alt="Games Project 2">
+                </div>
+                <!-- Hybrid Apps Projects -->
+                <div class="portfolio-item hybrid">
+                    <img src="./Black Illustrative Education Logo.png" alt="Hybrid App Project 1">
+                </div>
+                <div class="portfolio-item hybrid">
+                    <img src="./Blue Modern Digital Company Logo.png" alt="Hybrid App Project 2">
+                </div>
+                <div class="portfolio-item hybrid">
+                    <img src="./29838131_7580918.jpg" alt="Hybrid App Project 2">
+                </div>
+            </div>
+        </div>
+
+
+
+    <center>
+    <div class="faq-container" style="background-color: #14213D; width: 100%; margin-top: 90px;" >
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)" style="background-color: #708090; color: white;">Do I get discounts for the services?</div>
+            <div class="faq-answer" style="background-color: #708090; color: white;">We offer irresistible packages that include several core services.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)" style="background-color: #708090; color: white;">Do you have a refund policy?</div>
+            <div class="faq-answer" style="background-color: #708090; color: white;">Our refund policy depends on the type of service purchased. Please contact support for more details.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)" style="background-color: #708090; color: white;">I have privacy concerns about my data. Is your network secure?</div>
+            <div class="faq-answer" style="background-color: #708090; color: white;">Yes, our network uses industry-standard encryption and security measures to protect your data.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question" onclick="toggleAnswer(this)" style="background-color: #708090; color: white;">What if I have a question midway?</div>
+            <div class="faq-answer" style="background-color: #708090; color: white;">You can reach out to our support team at any time during your service period.</div>
+        </div>
+    </div>
+</center>
+          <!-- Testimonial Start -->
+           <center>
+          <div class="hj" style="background-color: #14213D; margin-left: -90px;">
+            <br><br><br><br><br><br><br><br><br><br>
+             <div class="row" style=" margin-left: 360px; margin-top: -100px; width: 70%;">
+                 <div class="col-md-offset-2 col-md-8 ">
+                    <center>
+                     <h1 style=" color: #Fca311;">TESTIMONIAL</h1>
+                    </center>
+                     <div id="testimonial-slider" class="owl-carousel">
+                         <div class="testimonial" style="margin-top: -90px;">
+                             <img src="Green Modern Web Design Studio Logo.png" alt="" width="300px">
+                             <center>
+                             <p class="description" style="color: white;">
+                                 The website looks amazing! It exceeded all my expectations. Great job, team!
+                             </p></center>
+                             <center>
+                             <h3 class="title"  style="color: #Fca311;">WILLIAMSON</h3>
+                             <span class="post" style="color: white;">Web Developer</span></center>
+                         </div>
+      
+                         <div class="testimonial">
+                             <img src="Black Global Tech Internet Company Logo.png" alt="" width="300px">
+                             <center>
+                             <p class="description" style="color: white;">
+                                 The professionalism and attention to detail were outstanding. Highly recommend!
+                             </p></center>
+                             <center>
+    
+                             <h3 class="title" style="color: #Fca311;">KATRINA</h3>
+                             <span class="post" style="color: white;">Web Designer</span></center>
+    
+                             
+                         </div>
+      
+                         <div class="testimonial">
+                             <img src="Black and White Circle Business Logo.png" alt="" width="300px">
+                            <center>
+                             <p class="description" style="color: white;">
+                                 I’ve worked with many developers, but this experience was top-notch.
+                             </p></center>
+                             <center> <h3 class="title" style="color: #Fca311;">JEREMY CLEN</h3>
+                             <span class="post" style="color: white;">Web Developer</span></center>
+                         </div>
+                         <div class="testimonial">
+                             <img src="Blue Modern Digital Company Logo.png" alt="" width="300px">
+                             <center>
+                             <p class="description" style="color: white;">
+                                 Our website went live on time, and the results are fantastic. Thank you
+                             </p></center>
+                             <center>
+                             <h3 class="title" style="color: #Fca311;">JEREMY CLEN</h3>
+                             <span class="post" style="color: white;">Web Developer</span></center>
+                         </div>
+                         <div class="testimonial">
+                             <img src="Dark Blue Beige Circle Y2K Illustrative Class Logo.png" alt="" width="300px">
+                             <center>
+                             <p class="description" style="color: white;">
+                                 Their design skills are second to none. Our web traffic has doubled!
+                             </p></center>
+                             <center>
+                             <h3 class="title" style="color: #Fca311;">JEREMY CLEN</h3>
+                             <span class="post" style="color: white;">Web Developer</span></center>
+                         </div>
+                         <div class="testimonial">
+                             <img src="Black Illustrative Education Logo.png" alt="" width="300px">
+                            <center>
+                             <p class="description" style="color: white;">
+                                 Excellent communication and even better execution. Truly impressed.
+                             </p></center>
+                             <center>
+                             <h3 class="title" style="color: #Fca311;">JEREMY CLEN</h3>
+                             <span class="post" style="color: white;">Web Developer</span></center>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+    </div>     
+</center>
+        <!-- Testimonial End -->
+
+
+      
+        <div class="bann">
+            <div class="banner-contnt">
+                <h1 style="margin-top: 80px;">Get Free Consultancy</h1>
+                <div class="contat-info">
+                    <div class="phone" >
+                        
+                        <span style="margin-top: -160px; margin-left: 560px; font-size: 30px;">(800) 880-4109</span>
+                    </div>
+                    <div class="email">
+                        
+                        <span style="margin-top: -50px; margin-left: -220px; font-size: 30px;">hello@logozeal.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="button-continer" style="background-color: #Fca311;">
+                <button>LET'S TALK</button>
+            </div>
+        </div>  
+
+        <!-- Contact Start -->
+        <div class="container-xxl py-5" id="contact" style="background-color: #14213D;">
+            <div class="container py-5 px-lg-5">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class=" fw-medium" style="color: white;">Contact Us</h5>
+                    <h1 class="mb-5" style="color: #Fca311;">Get Free Consultancy</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="wow fadeInUp" data-wow-delay="0.3s">
+                            <p class="text-center mb-4" style="color: white;">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="" style="color: #Fca311;">Download Now</a>.</p>
+                            <form>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <label for="subject">Subject</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                            <label for="message">Message</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-center">
+                                        <button class="btn rounded-pill py-3 px-5" type="submit" style="background-color: #Fca311; color: white;">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+        
+
+    <!-- Footer Start -->
+    <footer style="background-color: #14213D;">
+        <div class="container" style="background-color: #14213D;">
+          <div class="row" style="background-color: #14213D;">
+            <div class="col-md-3">
+              <h3 style="color: #Fca311;">About Us</h3>
+              <p>Logo Zeal is a Digital Marketing Agency that provides comprehensive digital services, including individual logo design and website development assistance.</p>
+              <img src="dmca.png" alt="DMCA Protected" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="col-md-3">
+              <h3 style="color: #Fca311;">Quick Links</h3>
+              <ul>
+                <li>Home</li>
+                <li>About LogoZeal</a></li>
+                <li>Recent Work</a></li>
+                <li>Packages</a></li>
+                <li>Contact Us</a></li>
+                <li>Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3 style="color: #Fca311;">Our Services</h3>
+              <ul>
+                <li>Logo & Branding</li>
+                <li>Website Design</li>
+                <li>SEO</li>
+                <li>Mobile Application</li>
+                <li>Video Animation</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3 style="color: #Fca311;">Stay in Touch</h3>
+              <p><strong>Located at:</strong><br>
+                5915 Cowles Mountain Boulevard, LA Mesa,<br>
+                CA, 91942, UNITED STATES
+              </p>
+              <p><strong>Call Us:</strong><br>
+                (800) 880-4109
+              </p>
+              <p><strong>Write to Us:</strong><br>
+                <a href="mailto:info@logozeal.com">info@logozeal.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom" style="background-color: #14213D;">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="copyright">Copyright &copy; 2024 All Rights Reserved | Powered by LogoZeal</p>
+                <ul class="footer-links">
+                  <li><a href="./refund policy.html">Refund Policy</a></li>
+                  <li><a href="./privacy.html">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Finance Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2" style="background-color: #Fca311;"><i class="bi bi-arrow-up text-white"></i></a>
+    </div>
+</div>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>d
+<script>
+    
+$(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:1,
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[768,1],
+        pagination:true,
+        navigation:true,
+        navigationText:["",""],
+        slideSpeed:1000,
+        autoPlay:true
+    });
+});    
+    
+    </script>
+
+<script>function filterItems(category) {
+    const items = document.querySelectorAll('.portfolio-item');
+    const tags = document.querySelectorAll('.tag');
+
+    // Remove 'active' class from all tags
+    tags.forEach(tag => tag.classList.remove('active'));
+
+    // Add 'active' class to the clicked tag
+    document.querySelector(`.tag[onclick="filterItems('${category}')"]`).classList.add('active');
+
+    // Show only items that match the category
+    items.forEach(item => {
+        if (item.classList.contains(category)) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+}
+
+// Initialize by showing all items from the first category (iOS)
+document.addEventListener('DOMContentLoaded', () => {
+    filterItems('ios');
+});
+</script>
+<script>
+    function toggleAnswer(element) {
+        const answer = element.nextElementSibling;
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Branding & Pricing</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Top Bar Styles */
+        .top-bar {
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .top-bar .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .top-bar .nav-links {
+            display: flex;
+        }
+
+        .top-bar .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+
+        .top-bar .contact {
+            display: flex;
+            align-items: center;
+        }
+
+        .top-bar .contact a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .top-bar .contact a .phone-icon {
+            margin-right: 10px;
+            font-size: 20px;
+            color: #7e57c2;
+        }
+
+        .top-bar .cta-button {
+            background-color: #7e57c2;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            margin-left: 20px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: url('./Screenshot\ 2024-09-26\ 180836.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 150px 200px;
+            position: relative;
+            margin-top: 80px; /* For fixed header space */
+        }
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .cta-btn, .price-btn {
+            background-color: #7e57c2;
+            padding: 15px 30px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .price-btn {
+            background-color: #ffcb3a;
+            color: #000;
+        }
+
+        /* Branding Section */
+        .branding-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff;
+            padding: 50px;
+        }
+
+        .container-branding {
+            text-align: center;
+            max-width: 800px;
+        }
+
+        .decorative-line {
+            width: 80px;
+            height: 4px;
+            background-color: red;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .decorative-line::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            width: 30px;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+
+        /* Pricing Section */
+        .pricing-header {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+
+        .toggle-buttons button {
+            background: none;
+            border: none;
+            padding: 10px;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        .toggle-buttons button.active {
+            font-weight: bold;
+            color: #6c63ff;
+            border-bottom: 2px solid #6c63ff;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 50px 20px;
+            }
+
+            .hero-section h1 {
+                font-size: 2rem;
+            }
+
+            .hero-section p {
+                font-size: 1rem;
+            }
+        }
+        
+  
+  /*.packages {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .package-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  } */
+   
+.packages {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 100%;
+}
+.package-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+  .package-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .package-card .highlight {
+    color: #6a1b9a;
+  }
+  
+  .package-card .price {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .package-card .currency {
+    font-size: 24px;
+    vertical-align: top;
+  }
+  
+  .package-card .tagline {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .package-card ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+  
+  .package-card ul li {
+    font-size: 16px;
+    padding: 5px 0;
+    color: #555;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .order-btn, .chat-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 48%;
+  }
+  
+  .order-btn {
+    background-color: #6a1b9a;
+    color: #fff;
+    transition: all .5s ease-in-out;
+  }
+  
+    
+  .order-btn:hover{
+    background-color: #ffd600;
+    color: #fff;
+  }
+
+  .chat-btn {
+    background-color: #ffd600;
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .packages {
+      flex-direction: column;
+    }
+  
+    .package-card {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .process-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.process-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.step {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.step-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff5a60; /* Example color */
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.step img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.step h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 1em;
+    color: #666;
+}
+
+.step:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .process-steps {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.heading h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.heading h2 {
+    font-size: 22px;
+    color: #ffc107;
+}
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+.box {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 23%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.box h3 {
+    color: #ffc107;
+    margin-bottom: 15px;
+}
+.box ul {
+    list-style: none;
+    line-height: 1.8;
+}
+.box ul li {
+    margin-bottom: 10px;
+}
+.box ul li::before {
+    content: "\f00c";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #00ff00;
+    margin-right: 10px;
+}
+.offer {
+    background-color: #311b92;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.offer p {
+    font-size: 16px;
+}
+.offer .price {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffc107;
+}
+.offer .old-price {
+    text-decoration: line-through;
+    font-size: 20px;
+}
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.cta-buttons a {
+    text-decoration: none;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.cta-buttons .order-now {
+    background-color: #311b92;
+}
+.cta-buttons .live-chat {
+    background-color: #ffc107;
+    color: #311b92;
+}
+.more-features {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 16px;
+}
+.more-features span {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px;
+    color: #ffc107;
+}
+
+.header {
+    background-color: #4A00E0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.header p {
+    font-size: 18px;
+}
+
+.buttons {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.buttons a {
+    text-decoration: none;
+    background-color: #6A00E0;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.buttons a:hover {
+    background-color: #7F00E0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.faq-section {
+    max-width: 800px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item button {
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid #4A00E0;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-item button:hover {
+    background-color: #f0f0f0;
+}
+
+.faq-answer {
+    padding: 10px 15px;
+    background-color: #f8f8f8;
+    border-left: 4px solid #4A00E0;
+    display: none;
+}
+
+/* Footer Section */
+.footer-bar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 15px;
+}
+
+.footer-bar .icon {
+    margin: 0 20px;
+}
+
+.footer-bar .icon a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bar .icon a:hover {
+    color: #6A00E0;
+}
+
+.footer-bar .icon.facebook a {
+    background-color: #3b5998;
+    padding: 20px;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.footer-bar .icon.instagram a {
+    background-color: #d6249f;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.footer-bar .icon.linkedin a {
+    background-color: #0077b5;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.footer-bar .icon.youtube a {
+    background-color: #ff0000;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="logo">
+            <img src="./logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#">About Us</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="contact">
+            <a href="#"><span class="phone-icon">📞</span>Call Us (800) 880-4109</a>
+            <a href="#" class="cta-button">Request A Custom Quote</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>Custom Logo Design Services</h1>
+        <p>That Create a Strong Impression</p>
+        <div class="cta-buttons">
+            <button class="cta-btn">Live Chat</button>
+            <button class="price-btn">From $59.00</button>
+        </div>
+    </div>
+
+    <!-- Branding Section -->
+    <section class="branding-section">
+        <div class="container-branding">
+            <h1>We Transform The Right Design Theory Into A Powerful Brand Identity!</h1>
+            <div class="decorative-line"></div>
+            <p class="description">
+                Welcome to logo zeal. We are a full-service design agency with extensive experience in professional digital branding services, including custom logo designs, stationery designs, brochure designs, banner designs and a lot more that can help businesses meet most of their branding needs. We have continued to serve numerous customers from diverse industries with our creative design services. We have helped them redefine how their brands appear, accomplish all their strategic branding goals, and develop a strong brand identity.
+
+Our mission is to ensure that your brand comes to life through tailored solutions that amplify and elevate your brand's current market standing. We offer fast, affordable and hassle-free services. We can identify the core targeted audience of your business and build a logo design which assists in appealing effectively. Through our custom logo design and branding services, we will strengthen the overall outlook of your business, provide a platform from which your business can benefit and ensure that the business's overall vision is reflected within the logo
+            </p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <div class="container py-5">
+        <div class="pricing-header">
+            <h1>Crafting Perfect Packages for Corporations Globally</h1>
+            <p class="lead"></p>
+        </div>
+
+        <div class="toggle-buttons text-center mb-4">
+            <button id="logoBtn" class="active">Logo</button>
+            <button id="brandingBtn">Branding</button>
+        </div>
+
+        <div id="logoPackages" class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Logo Packages Card -->
+            <div class="packages">
+                <div class="package-card">
+                  <h3>LOGO <span class="highlight">SPECIAL</span></h3>
+                  <p class="price"><span class="currency">$</span>59.00</p>
+                  <p class="tagline">Best Value for Money Guaranteed!</p>
+                  <ul>
+                    <li>4 Original Logo Concepts</li>
+                    <li>2 Dedicated Logo Designers</li>
+                    <li>4 Revisions</li>
+                    <li>Grey Scale Format</li>
+                    <li>Free Icon Design</li>
+                    <li>24-48 Hours Turnaround Time</li>
+                  </ul>
+                  <div class="buttons">
+                    <button class="order-btn">ORDER NOW</button>
+                    <button class="chat-btn">LIVE CHAT</button>
+                  </div>
+                </div>
+        
+                <div class="package-card">
+                  <h3>LOGO <span class="highlight">PLUS</span></h3>
+                  <p class="price"><span class="currency">$</span>199.00</p>
+                  <p class="tagline">Best Value for Money Guaranteed!</p>
+                  <ul>
+                    <li>12 Original Logo Concepts</li>
+                    <li>4 Dedicated Logo Designers</li>
+                    <li>Unlimited Revisions</li>
+                    <li>Stationery Design (Business Card, Letterhead, Envelope)</li>
+                    <li>Email Signature Design</li>
+                    <li>Grey Scale Format</li>
+                  </ul>
+                  <div class="buttons">
+                    <button class="order-btn">ORDER NOW</button>
+                    <button class="chat-btn">LIVE CHAT</button>
+                  </div>
+                </div>
+        
+                <div class="package-card">
+                  <h3>LOGO <span class="highlight">PLATINUM</span></h3>
+                  <p class="price"><span class="currency">$</span>399.00</p>
+                  <p class="tagline">For Startups and Small Business Owners</p>
+                  <ul>
+                    <li>Unlimited Original Logo Concepts</li>
+                    <li>8 Dedicated Logo Designers</li>
+                    <li>Unlimited Revisions</li>
+                    <li>Stationery Design (Business Card, Letterhead, Envelope)</li>
+                    <li>500 Business Cards</li>
+                    <li>Email Signature Design</li>
+                  </ul>
+                  <div class="buttons">
+                    <button class="order-btn">ORDER NOW</button>
+                    <button class="chat-btn">LIVE CHAT</button>
+                  </div>
+                </div>
+        
+            <!-- New Cards -->
+            <div class="package-card">
+                <h3>THE <span class="highlight">BOSS</span></h3>
+                <p class="price"><span class="currency">$</span>599.00</p>
+                <p class="tagline">Flexibility and Value for Growing Businesses</p>
+                <ul>
+                  <li>3D/Mascot/Animated Logo</li>
+                  <li>Unlimited Original Logo Concepts</li>
+                  <li>8 Dedicated Logo Designers</li>
+                  <li>Unlimited Revisions</li>
+                  <li>Stationery Design (Business Card, Letterhead, Envelope)</li>
+                  <li>500 Business Cards</li>
+                </ul>
+                <div class="buttons">
+                  <button class="order-btn">ORDER NOW</button>
+                  <button class="chat-btn">LIVE CHAT</button>
+                </div>
+              </div>
+      
+              <div class="package-card">
+                <h3>LOGO <span class="highlight">INFINITE</span></h3>
+                <p class="price"><span class="currency">$</span>1259.00</p>
+                <p class="tagline">Answer to All your Branding Needs</p>
+                <ul>
+                  <li>Unlimited Original Logo Concepts</li>
+                  <li>8 Dedicated Logo Designers</li>
+                  <li>Unlimited Revisions</li>
+                  <li>5 Page Informative Website</li>
+                  <li>Stationery Design (Business Card, Letterhead, Envelope)</li>
+                  <li>Brand Book</li>
+                </ul>
+                <div class="buttons">
+                  <button class="order-btn">ORDER NOW</button>
+                  <button class="chat-btn">LIVE CHAT</button>
+                </div>
+              </div>
+      
+              <div class="package-card">
+                <h3>LOGO <span class="highlight">COMBO</span></h3>
+                <p class="price"><span class="currency">$</span>1499.00</p>
+                <p class="tagline">Affordable and Unique Branding Solution</p>
+                <ul>
+                  <li>Unlimited Original Logo Concepts</li>
+                  <li>12 Dedicated Logo Designers</li>
+                  <li>Unlimited Revisions</li>
+                  <li>Ecommerce Website</li>
+                  <li>Stationery Design (Business Card, Letterhead, Envelope)</li>
+                  <li>Brand Book</li>
+                </ul>
+                <div class="buttons">
+                  <button class="order-btn">ORDER NOW</button>
+                  <button class="chat-btn">LIVE CHAT</button>
+                </div>
+              </div>
+                
+              </div>
+    
+            <!-- Add other logo packages similarly -->
+        </div>
+
+        <div id="brandingPackages" class="row row-cols-1 row-cols-md-3 g-4" style="display: none;">
+            <div class="packages">
+                
+            </div>
+
+            <!-- Add other branding packages similarly -->
+        </div>
+    </div>
+
+
+
+
+  <div class="container">
+      <div class="heading">
+          <h1>COMPLETE BRANDING SOLUTION</h1>
+          <h2>It's time to build your brand. Get 70% off!</h2>
+      </div>
+      <div class="boxes">
+          <div class="box">
+              <h3>LOGO DESIGN</h3>
+              <ul>
+                  <li>Unlimited Concepts</li>
+                  <li>Unlimited Revisions</li>
+                  <li>4 Dedicated Logo Designers</li>
+                  <li>Turnaround 48–72 hrs</li>
+              </ul>
+          </div>
+          <div class="box">
+              <h3>STATIONERY DESIGN</h3>
+              <ul>
+                  <li>Business Card Design</li>
+                  <li>Letterhead Design</li>
+                  <li>Envelope Design</li>
+                  <li>Brochure Design</li>
+              </ul>
+          </div>
+          <div class="box">
+              <h3>WEBSITE</h3>
+              <ul>
+                  <li>1 Custom Design Concept</li>
+                  <li>1 Blog Theme Design</li>
+                  <li>Unlimited Pages</li>
+                  <li>1 Year FREE Domain Registration</li>
+                  <li>1 Year FREE Hosting</li>
+                  <li>Content Management System</li>
+                  <li>Search Engine Submission</li>
+              </ul>
+          </div>
+          <div class="box">
+              <h3>MARKETING COLLATERAL</h3>
+              <ul>
+                  <li>Any 3 of Your Choice</li>
+                  <li>(Facebook, LinkedIn, Twitter, YouTube)</li>
+              </ul>
+          </div>
+      </div>
+      
+      <div class="offer">
+          <p>Was <span class="old-price">$4,330</span> Now</p>
+          <p class="price">$1,249</p>
+          <div class="cta-buttons">
+              <a href="#" class="order-now">ORDER NOW</a>
+              <a href="#" class="live-chat">LIVE CHAT</a>
+          </div>
+          <p>Limited time offer</p>
+      </div>
+  
+      <div class="more-features">
+          <span>100% Satisfaction Guarantee</span>
+          <span>24 X 7 Customer Support</span>
+          <span>100% Ownership Rights</span>
+          <span>Money Back Guarantee</span>
+      </div>
+  </div>
+  
+
+
+  <section class="process-section">
+      <h2>Here is How we Create Professional Designs</h2>
+      <div class="process-steps">
+          <div class="step">
+              <div class="step-number">01</div>
+              <img src="https://logozeal.com/assets/front/images/animated-sixth-01.webp" alt="Design Brief">
+              <h3>Design Brief</h3>
+              <p>Fill out the creative design brief, tell us everything you need, and let us kick-start your project.</p>
+          </div>
+          <div class="step">
+              <div class="step-number">02</div>
+              <img src="https://logozeal.com/assets/front/images/animated-sixth-02.webp" alt="Designing Process">
+              <h3>Designing Process</h3>
+              <p>From scratch, we brainstorm and sketch emblems for your business identity.</p>
+          </div>
+          <div class="step">
+              <div class="step-number">03</div>
+              <img src="https://logozeal.com/assets/front/images/animated-sixth-03.webp" alt="Approval and Edits">
+              <h3>Approval and Edits</h3>
+              <p>Our drafts are first sent over to you for approval and necessary edits.</p>
+          </div>
+          <div class="step">
+              <div class="step-number">04</div>
+              <img src="https://logozeal.com/assets/front/images/animated-sixth-04.webp" alt="Final Rounds">
+              <h3>Final Rounds</h3>
+              <p>In the final moments, we polish, recheck, and sharpen your final identity.</p>
+          </div>
+      </div>
+  </section>
+
+
+  
+  <!-- Header Section -->
+  <div class="header">
+      <h1>Let Us Give Your Brand An Identity</h1>
+      <p>We transform creative ideas into stunning realities</p>
+      <div class="buttons">
+          <a href="#">Request a Custom Quote</a>
+          <a href="#">View All Projects</a>
+      </div>
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+          <button onclick="toggleFaq(this)">Do I get discounts for the services?</button>
+          <div class="faq-answer">
+              <p>Yes, we offer discounts on bulk orders and for returning customers.</p>
+          </div>
+      </div>
+
+      <div class="faq-item">
+          <button onclick="toggleFaq(this)">Do you have a refund policy?</button>
+          <div class="faq-answer">
+              <p>We offer refunds within 30 days if you're not satisfied with our services.</p>
+          </div>
+      </div>
+
+      <div class="faq-item">
+          <button onclick="toggleFaq(this)">I have privacy concerns about my data. Is your network secure?</button>
+          <div class="faq-answer">
+              <p>Yes, our network is highly secure, ensuring your data remains confidential and safe.</p>
+          </div>
+      </div>
+
+      <div class="faq-item">
+          <button onclick="toggleFaq(this)">What if I have a question midway?</button>
+          <div class="faq-answer">
+              <p>Our customer representatives are always available to answer your questions at any point.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Footer Social Bar -->
+  <div class="footer-bar">
+      <div class="icon facebook">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <div class="icon instagram">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div class="icon linkedin">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="icon youtube">
+          <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Toggle Logo/Branding Packages
+        const logoBtn = document.getElementById('logoBtn');
+        const brandingBtn = document.getElementById('brandingBtn');
+        const logoPackages = document.getElementById('logoPackages');
+        const brandingPackages = document.getElementById('brandingPackages');
+
+        logoBtn.addEventListener('click', function () {
+            logoPackages.style.display = 'flex';
+            brandingPackages.style.display = 'none';
+            logoBtn.classList.add('active');
+            brandingBtn.classList.remove('active');
+        });
+
+        brandingBtn.addEventListener('click', function () {
+            brandingPackages.style.display = 'flex';
+            logoPackages.style.display = 'none';
+            brandingBtn.classList.add('active');
+            logoBtn.classList.remove('active');
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        
+        footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        footer .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        footer .col-md-3 {
+            flex-basis: 23%;
+            padding: 10px;
+        }
+        
+        footer h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ffa500; /* Accent color */
+            padding-bottom: 5px;
+        }
+        
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        footer li {
+            margin-bottom: 10px;
+        }
+        
+        footer a {
+            color: #ffa500; /* Accent color */
+            text-decoration: none;
+            transition: color 0.3s; /* Smooth transition */
+        }
+        
+        footer a:hover {
+            color: #ccc;
+        }
+        
+        footer .footer-bottom {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        footer .copyright {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        footer .footer-links {
+            list-style: disc; /* Change to disc for bullets */
+            padding: 0;
+            margin-left: 300px;
+            display: flex; /* Center the links */
+            text-align: center; /* Align text to the left */
+        }
+        
+        footer .footer-links li {
+            margin: 0 15px;
+        }
+
+        footer .footer-links a:hover {
+            color: #ffa500; /* Accent color on hover */
+        }
+        
+        @media (max-width: 768px) {
+            footer .col-md-3 {
+                flex-basis: 48%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            footer .col-md-3 {
+                flex-basis: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h3>About Us</h3>
+              <p>Logo Zeal is a Digital Marketing Agency that provides comprehensive digital services, including individual logo design and website development assistance.</p>
+              <img src="dmca.png" alt="DMCA Protected" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="col-md-3">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About LogoZeal</a></li>
+                <li><a href="#">Recent Work</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>Our Services</h3>
+              <ul>
+                <li>Logo & Branding</li>
+                <li>Website Design</li>
+                <li>SEO</li>
+                <li>Mobile Application</li>
+                <li>Video Animation</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>Stay in Touch</h3>
+              <p><strong>Located at:</strong><br>
+                5915 Cowles Mountain Boulevard, LA Mesa,<br>
+                CA, 91942, UNITED STATES
+              </p>
+              <p><strong>Call Us:</strong><br>
+                (800) 880-4109
+              </p>
+              <p><strong>Write to Us:</strong><br>
+                <a href="mailto:info@logozeal.com">info@logozeal.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="copyright">Copyright &copy; 2024 All Rights Reserved | Powered by LogoZeal</p>
+                <ul class="footer-links">
+                  <li><a href="#">Refund Policy</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Finance Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

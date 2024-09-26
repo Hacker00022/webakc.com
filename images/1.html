@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Categories</title>
+<style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1D2B64; /* Dark blue background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.packaging-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.content {
+    width: 50%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+ul.services {
+    list-style: none;
+    font-size: 18px;
+}
+
+ul.services li {
+    margin-bottom: 10px;
+}
+
+.boxes {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.boxes img {
+    width: 48%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+ 
+</style>
+</head>
+<body>
+    <section class="app-section">
+        <h1>Brilliant Ideas That Create Great Value</h1>
+        <div class="tabs">
+            <button class="tab-button" onclick="showCategory('ios')">iOS</button>
+            <button class="tab-button" onclick="showCategory('android')">Android</button>
+            <button class="tab-button" onclick="showCategory('games')">Games</button>
+            <button class="tab-button" onclick="showCategory('hybrid')">Hybrid Apps</button>
+        </div>
+        
+        <div class="cards" id="ios">
+            <div class="card">
+                <img src="ios-app1.png" alt="iOS App 1">
+            </div>
+            <div class="card">
+                <img src="ios-app2.png" alt="iOS App 2">
+            </div>
+            <div class="card">
+                <img src="ios-app3.png" alt="iOS App 3">
+            </div>
+        </div>
+
+        <div class="cards" id="android" style="display: none;">
+            <div class="card">
+                <img src="android-app1.png" alt="Android App 1">
+            </div>
+            <div class="card">
+                <img src="android-app2.png" alt="Android App 2">
+            </div>
+            <div class="card">
+                <img src="android-app3.png" alt="Android App 3">
+            </div>
+        </div>
+
+        <div class="cards" id="games" style="display: none;">
+            <div class="card">
+                <img src="game-app1.png" alt="Game App 1">
+            </div>
+            <div class="card">
+                <img src="game-app2.png" alt="Game App 2">
+            </div>
+            <div class="card">
+                <img src="game-app3.png" alt="Game App 3">
+            </div>
+        </div>
+
+        <div class="cards" id="hybrid" style="display: none;">
+            <div class="card">
+                <img src="hybrid-app1.png" alt="Hybrid App 1">
+            </div>
+            <div class="card">
+                <img src="hybrid-app2.png" alt="Hybrid App 2">
+            </div>
+            <div class="card">
+                <img src="hybrid-app3.png" alt="Hybrid App 3">
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

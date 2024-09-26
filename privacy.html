@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Branding & Pricing</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            font-family: 'Roboto', sans-serif;
+            background-color: #14231d;
+        }
+
+        /* Top Bar Styles */
+        .top-bar {
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .top-bar .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .top-bar .nav-links {
+            display: flex;
+        }
+
+        .top-bar .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+
+        .top-bar .contact {
+            display: flex;
+            align-items: center;
+        }
+
+        .top-bar .contact a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .top-bar .contact a .phone-icon {
+            margin-right: 10px;
+            font-size: 20px;
+            color: #7e57c2;
+        }
+
+        .top-bar .cta-button {
+            background-color: #7e57c2;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            margin-left: 20px;
+        }
+
+
+        .cta-btn, .price-btn {
+            background-color: #7e57c2;
+            padding: 15px 30px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .price-btn {
+            background-color: #ffcb3a;
+            color: #000;
+        }
+
+        /* Branding Section */
+        .branding-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff;
+            padding: 50px;
+        }
+
+        .container-branding {
+            text-align: center;
+            width: 1000px;
+            padding: 50px;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        .decorative-line {
+            width: 80px;
+            height: 4px;
+            background-color: red;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .decorative-line::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            width: 30px;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        
+        footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        footer .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        footer .col-md-3 {
+            flex-basis: 23%;
+            padding: 10px;
+        }
+        
+        footer h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ffa500; /* Accent color */
+            padding-bottom: 5px;
+        }
+        
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        footer li {
+            margin-bottom: 10px;
+        }
+        
+        footer a {
+            color: #ffa500; /* Accent color */
+            text-decoration: none;
+            transition: color 0.3s; /* Smooth transition */
+        }
+        
+        footer a:hover {
+            color: #ccc;
+        }
+        
+        footer .footer-bottom {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        footer .copyright {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        footer .footer-links {
+            list-style: disc; /* Change to disc for bullets */
+            padding: 0;
+            margin-left: 300px;
+            display: flex; /* Center the links */
+            text-align: center; /* Align text to the left */
+        }
+        
+        footer .footer-links li {
+            margin: 0 15px;
+        }
+
+        footer .footer-links a:hover {
+            color: #ffa500; /* Accent color on hover */
+        }
+        
+        @media (max-width: 768px) {
+            footer .col-md-3 {
+                flex-basis: 48%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            footer .col-md-3 {
+                flex-basis: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        .image-rf{
+            width: 100%;
+            height: auto;
+            padding: 50px;
+            background-image: url(./Screenshot\ 2024-09-21\ 144836.jpg);
+        }
+        .image-rf h1{
+            color: white;
+            text-align: center;
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+  
+ 
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="logo">
+            <img src="./logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#">About Us</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="contact">
+            <a href="#"><span class="phone-icon">📞</span>Call Us (800) 880-4109</a>
+            <a href="#" class="cta-button">Request A Custom Quote</a>
+        </div>
+    </div>
+
+<br><br><br>
+    <!-- Branding Section -->
+    <div class="image-rf">
+        <h1>
+            Privacy Policy
+        </h1>
+    </div>
+    <section class="branding-section">
+        <div class="container-branding">
+            <p>At logo zeal, accessible from www.logo zeal.com, one of our main priorities is to respect the privacy of our visitors. This Privacy Policy document contains types of information that are collected and recorded by logo zeal and how we use it. The document is aimed at transparency with our readers.
+
+                If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us through email.
+                
+                This Privacy Policy applies only to our online activities and is valid for both visitors to our website and our clients with regards to the information that they shared and/or is collected. This policy does not apply to any information collected offline or via channels other than this website.</p>
+            <h1>Consent</h1>
+            <div class="decorative-line"></div>
+            <p class="description">By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+            <br>
+
+            <h1>INFROMATION WE COLLECT</h1>
+            <div class="decorative-line"></div>
+            <p class="description">The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.
+                        <br>
+                If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.
+                <br>
+                When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number for verification purposes. Additional services may require your bank details as well.
+                <br>
+                Certain aspects of your behavior pattern (how you use our website) are also collected by the website cookies and your IP server automatically. An additional explanation is also available in the section below</p>
+                <br>
+                <h1>HOW IS YOUR INFORMATION USED?</h1>
+                <div class="decorative-line"></div>
+                <p class="description">
+                    We use the information we collect in various ways, including to:
+<br>
+To improve, personalize, and expand our website features and services based on user pattern and experience. <br>
+The information collected by the website cookies is used by Google for data storage and analysis purposes. You can opt-out of this option by disabling the cookies in the setting. <br>
+Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website or the services you opted for. <br>
+Your email address and certain personal information are used for marketing and promotional purposes. You have the choice to receive these emails or opt-out as you like with the simple process of turning them off. <br>
+All information collected and used is done with the support of the encrypted system to protect your data from malice. <br>
+We do not share your information with third-parties nor do we encourage providing your personal information to any additional links sourced to a new platform. However, we are liable to share information for legal matters and fraud <br>
+
+                </p>
+                <br>
+                <h1>LOG FILES</h1>
+            <div class="decorative-line"></div>
+            <p class="description">logo zeal follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytic. The information collected by log files includes internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any personally identifiable information. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+            <br>
+            <h1>COOKIES AND WEB BEACONS</h1>
+            <div class="decorative-line"></div>
+            <p class="description">
+                
+                Like any other website, logo zeal uses 'cookies'. The purpose of cookies is to store information including visitors' preferences, and the pages on the website that the visitor accessed or visited. The information is used to optimize the users' experience by customizing our web page content based on visitors' browser type and/or other information.
+
+            </p>
+            <br>
+            <h1>GOOGLE DOUBLECLICK DART COOKIE</h1>
+            <div class="decorative-line"></div>
+            <p class="description">Google is one of the third-party vendors on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to our website and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy.
+<br>
+                Third-party ad servers or ad networks also use technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on logo zeal, which are sent directly to users' browsers. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.
+    <br>            
+                Note that logo zeal has no access to or control over these cookies that are used by third-party advertisers.</p>
+            <br>
+            <h1>THIRD PARTY PRIVACY POLICIES</h1>
+            <div class="decorative-line"></div>
+            <p class="description">logo zeal's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.
+<br><br>
+                You can choose to disable cookies through your browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
+            <br>
+            <h1>CCPA PRIVACY RIGHTS (Do Not Sell My Personal Information)</h1>
+            <div class="decorative-line"></div>
+            <p class="description">Under the CCPA, among other rights, Florida consumers have the right to:
+<br>
+                Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers so far. Any individual can request total transparency.
+    <br>            
+                Request that a business delete any personal data about the consumer that a business has collected. The business is liable to fulfill this request.
+        <br>        
+                After you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+            <br>
+            <h1>GDPR DATA PROTECTION RIGHTS</h1>
+            <div class="decorative-line"></div>
+            <p class="description">
+
+                We would like you to be fully aware of all of your data protection rights. Every user is entitled to the following:
+<br>
+                You have the right to access – You have the right to request copies of your data. We may charge you a small fee for this service.
+    <br>            
+                You have the right to rectify – You have the right to request and correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.
+        <br>        
+                The right to deletion – You have the right to request that we erase your personal data, under certain conditions.
+            <br>    
+                The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.
+                <br>
+                If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.
+
+            </p>
+            <br>
+            <h1>CHILDREN's INFORMATION</h1>
+            <div class="decorative-line"></div>
+            <p class="description">
+                
+                Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.
+<br><br>
+                logo zeal does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child has provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.
+
+            </p>
+            <br>
+            <h1>CONTACT</h1>
+            <div class="decorative-line"></div>
+            <p class="description">In case you have any queries in reference to this privacy policy kindly reach us using the details below:
+<br><br>
+                Email: info@logozeal.com <br>
+
+                Phone: (800) 880-4109</p>
+            <br>
+
+
+
+            </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h3>About Us</h3>
+              <p>Logo Zeal is a Digital Marketing Agency that provides comprehensive digital services, including individual logo design and website development assistance.</p>
+              <img src="dmca.png" alt="DMCA Protected" style="max-width: 100%; height: auto;">
+            </div>
+            
+            <div class="col-md-3">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About LogoZeal</a></li>
+                <li><a href="#">Recent Work</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>Our Services</h3>
+              <ul>
+                <li>Logo & Branding</li>
+                <li>Website Design</li>
+                <li>SEO</li>
+                <li>Mobile Application</li>
+                <li>Video Animation</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>Stay in Touch</h3>
+              <p><strong>Located at:</strong><br>
+                5915 Cowles Mountain Boulevard, LA Mesa,<br>
+                CA, 91942, UNITED STATES
+              </p>
+              <p><strong>Call Us:</strong><br>
+                (800) 880-4109
+              </p>
+              <p><strong>Write to Us:</strong><br>
+                <a href="mailto:info@logozeal.com">info@logozeal.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="copyright">Copyright &copy; 2024 All Rights Reserved | Powered by LogoZeal</p>
+                <ul class="footer-links">
+                  <li><a href="./refund policy.html">Refund Policy</a></li>
+                  <li><a href="./privacy.html">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Finance Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
