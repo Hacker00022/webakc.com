@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Branding & Pricing</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Top Bar Styles */
+        .top-bar {
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .top-bar .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .top-bar .nav-links {
+            display: flex;
+        }
+
+        .top-bar .nav-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+        }
+
+        .top-bar .contact {
+            display: flex;
+            align-items: center;
+        }
+
+        .top-bar .contact a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .top-bar .contact a .phone-icon {
+            margin-right: 10px;
+            font-size: 20px;
+            color: #7e57c2;
+        }
+
+        .top-bar .cta-button {
+            background-color: #7e57c2;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            margin-left: 20px;
+        }
+
+
+        .cta-btn, .price-btn {
+            background-color: #7e57c2;
+            padding: 15px 30px;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .price-btn {
+            background-color: #ffcb3a;
+            color: #000;
+        }
+
+        /* Branding Section */
+        .branding-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff;
+            padding: 50px;
+        }
+
+        .container-branding {
+            text-align: center;
+            width: 1000px;
+            padding: 50px;
+            font-size: 20px;
+            text-align: left;
+        }
+
+        .decorative-line {
+            width: 80px;
+            height: 4px;
+            background-color: red;
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        .decorative-line::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 0;
+            right: 0;
+            height: 3px;
+            width: 30px;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 0;
+        }
+        
+        footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        footer .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        footer .col-md-3 {
+            flex-basis: 23%;
+            padding: 10px;
+        }
+        
+        footer h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ffa500; /* Accent color */
+            padding-bottom: 5px;
+        }
+        
+        footer ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        footer li {
+            margin-bottom: 10px;
+        }
+        
+        footer a {
+            color: #ffa500; /* Accent color */
+            text-decoration: none;
+            transition: color 0.3s; /* Smooth transition */
+        }
+        
+        footer a:hover {
+            color: #ccc;
+        }
+        
+        footer .footer-bottom {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        footer .copyright {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        footer .footer-links {
+            list-style: disc; /* Change to disc for bullets */
+            padding: 0;
+            margin-left: 300px;
+            display: flex; /* Center the links */
+            text-align: center; /* Align text to the left */
+        }
+        
+        footer .footer-links li {
+            margin: 0 15px;
+        }
+
+        footer .footer-links a:hover {
+            color: #ffa500; /* Accent color on hover */
+        }
+        
+        @media (max-width: 768px) {
+            footer .col-md-3 {
+                flex-basis: 48%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            footer .col-md-3 {
+                flex-basis: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        .image-rf{
+            width: 100%;
+            height: auto;
+            padding: 50px;
+            background-image: url(./Screenshot\ 2024-09-21\ 144836.jpg);
+        }
+        .image-rf h1{
+            color: white;
+            text-align: center;
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+  
+ 
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="logo">
+            <img src="./logo.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#">About Us</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="contact">
+            <a href="#"><span class="phone-icon">📞</span>Call Us (800) 880-4109</a>
+            <a href="#" class="cta-button">Request A Custom Quote</a>
+        </div>
+    </div>
+
+<br><br><br>
+    <!-- Branding Section -->
+    <div class="image-rf">
+        <h1>
+            Refund Policy
+        </h1>
+    </div>
+    <section class="branding-section">
+        <div class="container-branding">
+            <h1>Refund Policy</h1>
+            <div class="decorative-line"></div>
+            <p class="description">
+                Refund is valid till 30 days of order placement, provided that other terms are applied.
+                <br>
+Toll-Free # (800) 840-4530<br>
+Live Chat (click here)<br>
+Email us on any official ID info@logozeal.com<br>
+If you are not satisfied with the initial Responses provided by LogoZeal, there is no refund if your project moves to round two of logo alterations. You may request a refund by sending a written Refund Request. Upon timely receipt of the request, LogoZeal, will refund the total payment made by you, less a service and processing fee of 20% on package amount for a logo package whereas in case of a website, if the website is in the development phase the 40% design cost will be deducted from the package amount processed for refund.
+<br>
+There are no refunds for any rush service charges. 24-hour design fees and 24-hour rush changes are non-refundable.
+<br>
+In case of refund approval, the client will get his amount credited back within next 10-15 Business Days.
+<br>
+We won't entertain or refund any orders if the client stays non-responsive for 45 Days but the client can send us an email to hold the project if there is some personal issue. Also if the client is non-responsive for more than 60 Days then the client has to pay an extra caution fee i.e. $150 for re-initiating the project.
+<br>
+In case if the client wants to forfeit the website portion of the package after 30 days, refund won't be applicable; though we can hold the project in such case and the client can come later and get the project started again.
+<br>
+Furthermore, the customer shall forfeit the right to the refund outlined above if customer request additional revisions (1 or more design changes regardless of the complexity) or modifications to any of the initial concepts. You shall also forfeit the right to a refund if you do not respond in a timely manner to a status notification from logozeal.com
+<br>
+Should you receive a refund, you agree that your acceptance of the refund shall constitute your sole and exclusive remedy with respect to related Responses. Additionally, you acknowledge that you will have no right (express or implied) to use any Response or other work product, content, or media, nor will you have any ownership interest in or to the same.
+<br>
+In case of finalizing one part of the order, the customer won't be eligible for a refund for the rest of the remaining package.
+
+
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h3>About Us</h3>
+              <p>Logo Zeal is a Digital Marketing Agency that provides comprehensive digital services, including individual logo design and website development assistance.</p>
+              <img src="dmca.png" alt="DMCA Protected" style="max-width: 100%; height: auto;">
+            </div>
+            <div class="col-md-3">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About LogoZeal</a></li>
+                <li><a href="#">Recent Work</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>Our Services</h3>
+              <ul>
+                <li>Logo & Branding</li>
+                <li>Website Design</li>
+                <li>SEO</li>
+                <li>Mobile Application</li>
+                <li>Video Animation</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3>Stay in Touch</h3>
+              <p><strong>Located at:</strong><br>
+                5915 Cowles Mountain Boulevard, LA Mesa,<br>
+                CA, 91942, UNITED STATES
+              </p>
+              <p><strong>Call Us:</strong><br>
+                (800) 880-4109
+              </p>
+              <p><strong>Write to Us:</strong><br>
+                <a href="mailto:info@logozeal.com">info@logozeal.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <p class="copyright">Copyright &copy; 2024 All Rights Reserved | Powered by LogoZeal</p>
+                <ul class="footer-links">
+                  <li><a href="./refund policy.html">Refund Policy</a></li>
+                  <li><a href="./privacy.html">Privacy Policy</a></li>
+                  <li><a href="#">Terms & Conditions</a></li>
+                  <li><a href="#">Finance Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
